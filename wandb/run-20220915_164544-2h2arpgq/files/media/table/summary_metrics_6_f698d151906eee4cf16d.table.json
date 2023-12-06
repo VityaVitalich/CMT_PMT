@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["mae", 10.35, "KNeighborsRegressor"], ["mse", 151.82, "KNeighborsRegressor"], ["r2_score", 0.57, "KNeighborsRegressor"]]}

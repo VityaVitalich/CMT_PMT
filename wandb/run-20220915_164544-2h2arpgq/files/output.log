@@ -1,0 +1,165 @@
+  0%|          | 0/10 [00:00<?, ?it/s]wandb:
+wandb: Plotting ElasticNet.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged outlier candidates.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged residuals.
+ 10%|█         | 1/10 [00:01<00:15,  1.74s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged outlier candidates.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged residuals.
+ 20%|██        | 2/10 [00:02<00:08,  1.12s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged outlier candidates.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged residuals.
+ 30%|███       | 3/10 [00:03<00:07,  1.12s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged outlier candidates.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged residuals.
+ 40%|████      | 4/10 [00:04<00:05,  1.07it/s]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: Logged residuals.
+ 50%|█████     | 5/10 [00:05<00:05,  1.01s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged outlier candidates.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged residuals.
+ 60%|██████    | 6/10 [00:06<00:03,  1.10it/s]wandb:
+wandb: Plotting ElasticNet.
+wandb: ERROR Please fit the model before passing it in.
+wandb: Logged summary metrics.
+ 60%|██████    | 6/10 [00:06<00:04,  1.03s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 10%|█         | 1/10 [00:02<00:19,  2.18s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 20%|██        | 2/10 [00:04<00:16,  2.05s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 30%|███       | 3/10 [00:06<00:16,  2.32s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 40%|████      | 4/10 [00:08<00:13,  2.22s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 50%|█████     | 5/10 [00:12<00:12,  2.58s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 60%|██████    | 6/10 [00:14<00:09,  2.48s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 70%|███████   | 7/10 [00:24<00:15,  5.09s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 80%|████████  | 8/10 [00:31<00:11,  5.51s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+ 90%|█████████ | 9/10 [00:54<00:11, 11.10s/it]wandb:
+wandb: Plotting ElasticNet.
+wandb: Logged summary metrics.
+wandb: Logged learning curve.
+wandb: Logged outlier candidates.
+wandb: WARNING using only the first 100 datapoints to create chart residuals
+wandb: Logged residuals.
+100%|██████████| 10/10 [01:02<00:00,  6.28s/it]
+
+100%|██████████| 10/10 [00:02<00:00,  4.94it/s]
+ 50%|█████     | 5/10 [00:00<00:00, 47.78it/s]
+ElasticNet
+ElasticNet
+ElasticNet
+ElasticNet
+ElasticNet
+ElasticNet
+ElasticNet
+
+100%|██████████| 10/10 [00:02<00:00,  4.03it/s]
+ElasticNet
+ElasticNet
+ 50%|█████     | 5/10 [00:00<00:00, 19.80it/s]
+KNeighborsRegressor
+ElasticNet
+BayesianRidge
+SVR
+GaussianProcessRegressor
+DecisionTreeRegressor
+AdaBoostRegressor
+
+100%|██████████| 10/10 [00:02<00:00,  3.79it/s]
+RandomForestRegressor
+MLPRegressor
+  0%|          | 0/10 [00:00<?, ?it/s]
+100%|██████████| 10/10 [00:02<00:00,  4.83it/s]
+KNeighborsRegressor
+KNeighborsRegressor
+ElasticNet
+BayesianRidge
+SVR
+GaussianProcessRegressor
+DecisionTreeRegressor
+AdaBoostRegressor
+GradientBoostingRegressor
+RandomForestRegressor

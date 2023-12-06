@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["mae", 54.97, "GaussianProcessRegressor"], ["mse", 3377.27, "GaussianProcessRegressor"], ["r2_score", -8.5, "GaussianProcessRegressor"]]}

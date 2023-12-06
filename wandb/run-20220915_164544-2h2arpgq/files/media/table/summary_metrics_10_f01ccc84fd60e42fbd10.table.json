@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["mae", 7.0, "ElasticNet"], ["mse", 84.07, "ElasticNet"], ["r2_score", 0.76, "ElasticNet"]]}

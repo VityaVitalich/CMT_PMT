@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.4.0-125-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.6",
+    "heartbeatAt": "2022-09-15T13:45:46.047803",
+    "startedAt": "2022-09-15T13:45:44.774437",
+    "docker": null,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": null,
+        "commit": "7966dd4a5dd432a834d4fe05ab52d2f24355d337"
+    },
+    "email": "enemy1307@mail.ru",
+    "root": "/home/victor/CMT_PMT",
+    "host": "victor-P65-Creator-9SE",
+    "username": "victor",
+    "executable": "/home/victor/anaconda3/bin/python"
+}

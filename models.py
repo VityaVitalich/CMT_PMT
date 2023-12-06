@@ -5,6 +5,16 @@ from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error
 import statsmodels.api as sm
 from xgboost import XGBRegressor
+from xgboost import XGBClassifier
+
+from sklearn.metrics import classification_report
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import f1_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import precision_recall_fscore_support
+from sklearn.metrics import roc_auc_score
+
 
 
 def LinRegSklearn(X, y, model=None, **kwargs):
@@ -30,18 +40,41 @@ def LinRegSklearn(X, y, model=None, **kwargs):
     rmse = mean_squared_error(y_test, y_pred, squared = False)
     
     return (y_pred, y_test, r2, rmse)
+
+
+def LogRegSklearn(X, y, model=None, **kwargs):
+    '''
+    Works with classification task
+    get X - features, y - label, model - model to use.
+    
+    returns predictions, r2, mse
+    '''
+    
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 42, stratify=y)
+    
+
+    model = LogisticRegression(**kwargs,
+                      tol = 1e-10)
+
+    model.fit(X_train,y_train)
+    
+    y_pred = model.predict(X_test)
+    
+    metrics = precision_recall_fscore_support(y_test, y_pred, average='weighted')
+    
+    return (y_pred, y_test, metrics)
     
 
 def find_best_utils(X_train, y_train, X_val, y_val, param, **kwargs):
     
     if param == 'alpha':
-        param_ls = [0.1, 0.5, 1, 1.5, 2, 3, 3.1, 3.15, 3.2, 3.3, 3.4, 4, 5]
+        param_ls = [0.1, 0.5, 1, 3, 3.1, 3.15, ]
     elif param == 'l1':
-        param_ls = [0, 0.001, 0.01, 0.1, 0.5, 1]
+        param_ls = [0.01, 0.1,  1]
     elif param == 'normalize':
-        param_ls = [True, False]
+        param_ls = [False]
     elif param == 'max_iter':
-        param_ls = [1000, 2000, 3000, 4000, 5000]
+        param_ls = [1000, 2000, 3000]
     
     param_dic = {}
 
@@ -110,9 +143,9 @@ def XGBReg(X, y):
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3)
 
-    max_depth = [2, 3, 4, 5]
-    colsample = [0.6, 0.7, 0.8, 0.9, 1]
-    n_estimators = [100, 200, 300, 400, 500, 600]
+    max_depth = [2, 3]
+    colsample = [0.6, 0.7]
+    n_estimators = [100, 200, 400, 600]
     eta = [0.1, 0.3, 0.5]
     score = {}
 
@@ -128,6 +161,76 @@ def XGBReg(X, y):
     
     opt_params, rmse = sorted(score.items(), key=lambda item: item[1])[0]
     model = XGBRegressor(n_estimators = opt_params[0], max_depth=opt_params[1], eta=opt_params[2], colsample_bytree=opt_params[3])
+    model.fit(X_train, y_train)
+
+    return opt_params, rmse, model
+
+def XGBCls(X, y):
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, stratify=y)
+
+    max_depth = [2, 3]
+    colsample = [0.6, 0.7]
+    n_estimators = [100, 200,400,  600]
+    score = {}
+
+    for n in n_estimators:
+        for md in max_depth:
+            for cs in colsample:
+                model = XGBClassifier(n_estimators=n, max_depth=md, colsample_bytree=cs)
+                model.fit(X_train, y_train)
+                y_pred = model.predict(X_test)
+                score[(n,md,cs)] = roc_auc_score(y_pred,y_test)
+
+    
+    opt_params, roc_auc = sorted(score.items(), key=lambda item: item[1])[0]
+    model = XGBClassifier(n_estimators = opt_params[0], max_depth=opt_params[1], colsample_bytree=opt_params[2])
+    model.fit(X_train, y_train)
+
+    return opt_params, roc_auc, model
+
+def RFReg(X, y, task = 'regression'):
+    if task == 'regression':
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3)
+    else:
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, stratify=y)
+
+
+    max_depth = [None, 2, 3]
+    min_samples_split = [2, 3, 4, 5]
+    n_estimators = [100, 200, 300]
+    min_samples_leaf = [1, 2, 3]
+    score = {}
+
+    for n in n_estimators:
+        for md in max_depth:
+            for msl in min_samples_leaf:
+                for mss in min_samples_split:
+                    if task == 'regression':
+                        model = RandomForestRegressor(n_estimators=n, max_depth=md, min_samples_leaf=msl, min_samples_split=mss, n_jobs=-1)
+                    else:
+                        model = RandomForestClassifier(n_estimators=n, max_depth=md, min_samples_leaf=msl, min_samples_split=mss, n_jobs=-1)
+
+                    model.fit(X_train, y_train)
+                    y_pred = model.predict(X_test)
+
+                    if task == 'regression':
+                        score[(n,md,msl,mss)] = mean_squared_error(y_pred,y_test, squared=False)
+                    else:
+                        score[(n,md,msl,mss)] = roc_auc_score(y_test, y_pred)
+
+    if task == 'regression':
+        rev = False
+    else:
+        rev = True
+
+    opt_params, rmse = sorted(score.items(), key=lambda item: item[1], reverse = rev)[0]
+
+    if task == 'regression':
+        model = RandomForestRegressor(n_estimators=opt_params[0], max_depth=opt_params[1], min_samples_leaf=opt_params[2], min_samples_split=opt_params[3], n_jobs=-1)
+    else:
+        model = RandomForestClassifier(n_estimators=opt_params[0], max_depth=opt_params[1], min_samples_leaf=opt_params[2], min_samples_split=opt_params[3], n_jobs=-1)
+
     model.fit(X_train, y_train)
 
     return opt_params, rmse, model

@@ -1,0 +1,1 @@
+{"columns": ["metric_name", "metric_value", "model_name"], "data": [["mae", 17.08, "MLPRegressor"], ["mse", 391.39, "MLPRegressor"], ["r2_score", -0.1, "MLPRegressor"]]}
