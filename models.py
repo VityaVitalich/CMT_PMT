@@ -162,8 +162,10 @@ def XGBReg(X, y):
     opt_params, rmse = sorted(score.items(), key=lambda item: item[1])[0]
     model = XGBRegressor(n_estimators = opt_params[0], max_depth=opt_params[1], eta=opt_params[2], colsample_bytree=opt_params[3])
     model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    r2 = r2_score(y_test, y_pred)
 
-    return opt_params, rmse, model
+    return opt_params, rmse, r2, model
 
 def XGBCls(X, y):
 
@@ -196,10 +198,10 @@ def RFReg(X, y, task = 'regression'):
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, stratify=y)
 
 
-    max_depth = [None, 2, 3]
-    min_samples_split = [2, 3, 4, 5]
-    n_estimators = [100, 200, 300]
-    min_samples_leaf = [1, 2, 3]
+    max_depth = [None, 3]
+    min_samples_split = [2, 5]
+    n_estimators = [300]
+    min_samples_leaf = [1, 3]
     score = {}
 
     for n in n_estimators:
@@ -232,5 +234,7 @@ def RFReg(X, y, task = 'regression'):
         model = RandomForestClassifier(n_estimators=opt_params[0], max_depth=opt_params[1], min_samples_leaf=opt_params[2], min_samples_split=opt_params[3], n_jobs=-1)
 
     model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    r2 = r2_score(y_test, y_pred)
 
-    return opt_params, rmse, model
+    return opt_params, rmse, r2, model
