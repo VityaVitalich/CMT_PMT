@@ -1,347 +1,431 @@
 {
-    "age": [
+    "ACC_ADD1 from 2": [
         300,
         null,
         1,
         2
     ],
-    "ACC_ADD1": [
+    "ACC_ADD1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_ADD2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_ADD2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_ADD3 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_ADD3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_DIV1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_DIV1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_DIV2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_DIV2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_DIV3 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_DIV3 from 2": [
         300,
         null,
         1,
         5
     ],
-    "ACC_ADD2": [
+    "ACC_MUL1 from 2": [
         300,
         null,
         1,
         2
     ],
-    "ACC_ADD3": [
+    "ACC_MUL1 from 3": [
         300,
         null,
         1,
         2
     ],
-    "ACC_DIV1": [
+    "ACC_MUL2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_MUL2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_MUL3 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_MUL3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_SUB1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_SUB1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_SUB2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_SUB2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_SUB3 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "ACC_SUB3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_ADD1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_ADD1 from 3": [
         300,
         null,
         1,
         5
     ],
-    "ACC_DIV2": [
+    "RT_ADD2 from 1": [
         300,
         null,
         1,
         2
     ],
-    "ACC_DIV3": [
+    "RT_ADD2 from 3": [
         300,
         null,
         1,
         2
     ],
-    "ACC_MUL1": [
+    "RT_ADD3 from 1": [
         300,
         null,
         1,
         2
     ],
-    "ACC_MUL2": [
+    "RT_ADD3 from 2": [
         300,
         null,
         1,
         2
     ],
-    "ACC_MUL3": [
+    "RT_DIV1 from 2": [
         300,
         null,
         1,
         2
     ],
-    "ACC_SUB1": [
+    "RT_DIV1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_DIV2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_DIV2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_DIV3 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_DIV3 from 2": [
         300,
         null,
         1,
         5
     ],
-    "ACC_SUB2": [
+    "RT_MUL1 from 2": [
         300,
         null,
         1,
         2
     ],
-    "ACC_SUB3": [
-        300,
-        null,
-        1,
-        5
-    ],
-    "RT_ADD1": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT_ADD2": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT_ADD3": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT_DIV1": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT_DIV2": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT_DIV3": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT_MUL1": [
+    "RT_MUL1 from 3": [
         300,
         null,
         3,
         5
     ],
-    "RT_MUL2": [
+    "RT_MUL2 from 1": [
+        300,
+        null,
+        3,
+        2
+    ],
+    "RT_MUL2 from 3": [
         300,
         null,
         1,
         2
     ],
-    "RT_MUL3": [
+    "RT_MUL3 from 1": [
         300,
         null,
         1,
         2
     ],
-    "RT_SUB1": [
+    "RT_MUL3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_SUB1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_SUB1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_SUB2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_SUB2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_SUB3 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "RT_SUB3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_ADD1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_ADD1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_ADD2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_ADD2 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_ADD3 from 1": [
+        300,
+        null,
+        1,
+        5
+    ],
+    "N_ADD3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_DIV1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_DIV1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_DIV2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_DIV2 from 3": [
         300,
         null,
         3,
         5
     ],
-    "RT_SUB2": [
+    "N_DIV3 from 1": [
         300,
         null,
         1,
+        2
+    ],
+    "N_DIV3 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_MUL1 from 2": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_MUL1 from 3": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_MUL2 from 1": [
+        300,
+        null,
+        1,
+        2
+    ],
+    "N_MUL2 from 3": [
+        300,
+        3,
+        3,
         5
     ],
-    "RT_SUB3": [
+    "N_MUL3 from 1": [
         300,
         null,
         1,
         2
     ],
-    "N_ADD1": [
+    "N_MUL3 from 2": [
         300,
         null,
         1,
         2
     ],
-    "N_ADD2": [
+    "N_SUB1 from 2": [
         300,
         null,
         1,
         2
     ],
-    "N_ADD3": [
+    "N_SUB1 from 3": [
         300,
         null,
         1,
         2
     ],
-    "N_DIV1": [
-        300,
-        null,
-        1,
-        5
-    ],
-    "N_DIV2": [
-        300,
-        null,
-        1,
-        5
-    ],
-    "N_DIV3": [
+    "N_SUB2 from 1": [
         300,
         null,
         1,
         2
     ],
-    "N_MUL1": [
+    "N_SUB2 from 3": [
         300,
         null,
         1,
         2
     ],
-    "N_MUL2": [
+    "N_SUB3 from 1": [
         300,
         null,
         1,
         2
     ],
-    "N_MUL3": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "N_SUB1": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "N_SUB2": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "N_SUB3": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL level1": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL level2": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL level3": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL ADD": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL SUB": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL MUL": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "Accuracy ALL DIV": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL level1": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL level2": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL level3": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL ADD": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL SUB": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL MUL": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "RT ALL DIV": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "NofCorr ALL level1": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "NofCorr ALL level2": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "NofCorr ALL level3": [
-        300,
-        null,
-        1,
-        5
-    ],
-    "NofCorr ALL ADD": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "NofCorr ALL SUB": [
-        300,
-        null,
-        1,
-        2
-    ],
-    "NofCorr ALL MUL": [
-        300,
-        null,
-        1,
-        5
-    ],
-    "NofCorr ALL DIV": [
+    "N_SUB3 from 2": [
         300,
         null,
         1,
